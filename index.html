@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- membuat tag head -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- melakukan koneksi dengan index.css -->
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- melakukan koneksi dengan Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- membuat title atau judul halaman web -->
+    <title>Know More About Me</title>
+  </head>
+
+  <!-- membuat tag body -->
+  <body>
+    <!-- membuat tag header -->
+    <header>
+      <!-- membuat tag nav -->
+      <nav>
+        <!-- melakukan import gambar dengan class logo pada nav dan ketika diklik akan diarahkan menuju home atau keatas web -->
+        <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <!-- membuat tag ul -->
+        <ul>
+          <!-- membuat tag li -->
+          <!-- melakukan pembuatan menu pada nav dan apabila diklik akan diarahkan ke id(#) yang telah dikoneksikan -->
+          <li><a href="#background">Background</a></li>
+          <li><a href="#hobby">Hobby</a></li>
+          <li><a href="#personality">Personality</a></li>
+          <li><a href="#interest">Interest</a></li>
+        </ul>
+      </nav>
+
+      <!-- membuat class cover -->
+      <div class="cover">
+        <!-- membuat tag h1 -->
+        <h1>About Me</h1>
+        <!-- membuat tag p -->
+        <p>Get to know me better!</p>
+      </div>
+    </header>
+    <!-- membuat tag main -->
+    <main>
+      <!-- membuat tag div dengan id aside-group -->
+      <div id="aside-group">
+        <!-- membuat tag aside dengan role profile -->
+        <aside role="profile">
+          <!-- membuat tag article dengan class card -->
+          <article class="card">
+            <!-- membuat tag header -->
+            <header>
+              <!-- membuat tag h2 -->
+              <h2>Biodata</h2>
+              <!-- membuat tag figure -->
+              <figure>
+                <!-- melakukan import gambar profile dengan width sebesar 350px dan height auto -->
+                <img src="img/profile.jpg" alt="profile" width="350px" height="auto">
+              </figure>
+            </header>
+            <!-- membuat tag section -->
+            <section>
+              <!-- membuat tag table biodata -->
+              <table>
+                <!-- membuat tag tr-->
+                <tr>
+                  <!-- membuat tag th dan td-->
+                  <th>Nama</th><td>:</td>
+                  <td>Fransiscus Dharma Hadi Prayoga</td>
+                </tr>
+                <tr>
+                  <th>Tempat Tanggal Lahir</th><td>:</td>
+                  <td>Yogyakarta, 1 April 2003</td>
+                </tr>
+                <tr>
+                  <th>Jenis Kelamin</th><td>:</td>
+                  <td>Laki - laki</td>
+                </tr>
+                <tr>
+                  <th>Agama</th><td>:</td>
+                  <td>Katolik</td>
+                </tr>
+                <tr>
+                  <th>Alamat</th><td>:</td>
+                  <td>Bogor, Jawa Barat</td>
+                </tr>
+                <tr>
+                  <th>Golongan Darah</th><td>:</td>
+                  <td>B</td>
+                </tr>
+              </table>
+            </section>
+          </article>
+        </aside>
+        <!-- membuat tag aside dengan role find-me -->
+        <aside role="find-me">
+          <!-- membuat tag article dengan class card -->
+          <article class="card">
+            <!-- membuat tag header -->
+            <header>
+              <h2>Find Me</h2>
+            </header>
+            <!-- membuat tag div dengan class social-media -->
+            <div class="social-media">
+              <!-- membuat tag table social media -->
+              <table>
+                <tr>
+                  <!-- melakukan import icon github dari font awesome yang dikoneksikan dengan tautan akun github dan akan membuka page baru bila diklik  -->
+                  <th><a href="https://github.com/frnspry" target="_blank"><i class="fab fa-github"></i></a></th>
+                  <td>frnspry</td>
+                </tr>
+                <tr>
+                  <!-- melakukan import icon linkedin dari font awesome yang dikoneksikan dengan tautan akun linkedin dan akan membuka page baru bila diklik  -->
+                  <th><a href="https://www.linkedin.com/in/fransiscus-dharma-hadi-prayoga" target="_blank"><i class="fab fa-linkedin-in"></i></a></th>
+                  <td>Fransiscus Dharma Hadi Prayoga</td>
+                </tr>
+                <tr>
+                  <!-- melakukan import icon instagram dari font awesome yang dikoneksikan dengan tautan akun instagram dan akan membuka page baru bila diklik  -->
+                  <th><a href="https://www.instagram.com/frnspry/" target="_blank"><i class="fab fa-instagram"></i></a></th>
+                  <td>@frnspry</td>
+                </tr>
+                <tr>
+                  <!-- melakukan import icon facebook dari font awesome yang dikoneksikan dengan tautan akun facebook dan akan membuka page baru bila diklik  -->
+                  <th><a href="https://www.facebook.com/frnspry"  target="_blank"><i class="fab fa-facebook"></i></a></th>
+                  <td>Fransiscus Prayoga</td>
+                </tr>
+              </table>
+            </div>
+          </article>
+        </aside>
+      </div>
+
+      <!-- membuat tag div dengan id content -->
+      <div id="content">
+        <!-- membuat tag article dengan class card dan id background -->
+        <article class="card" id="background">
+          <h2>Background</h2>
+          <p>
+            Saya Fransiscus Dharma Hadi Prayoga, lahir di Yogyakarta pada tanggal 1 April 2003. Sejak kecil saya telah menunjukkan minat dalam teknologi dan ingin terus mengembangkan kemampuan saya dalam bidang ini. Oleh karena itu, saya memutuskan untuk melanjutkan studi saya di Universitas Indraprasta PGRI, dan saat ini saya sedang menempuh pendidikan S1 Teknik Informatika di semester 6. Sebagai seorang mahasiswa Teknik Informatika, saya selalu mencari peluang untuk memperluas pengetahuan dan keterampilan saya di bidang teknologi informasi. Saya percaya bahwa kemampuan teknis yang baik akan sangat bermanfaat untuk karir saya di masa depan. Oleh karena itu, saya selalu berusaha untuk belajar dengan tekun dan memperluas jaringan sosial dan profesional saya untuk mencapai tujuan saya.
+          </p>
+        </article>
+
+        <!-- membuat tag article dengan class card dan id hobby -->
+        <article class="card" id="hobby">
+          <h2>Hobby</h2>
+          <!-- membuat tag section -->
+          <section>
+            <h3>Mengeksplorasi Bootstrap</h3>
+            <img class="article-image" src="img/bootstrap.png" alt="bootstrap" />
+            <p>
+              Saya adalah seseorang yang memiliki hobi mengeksplorasi Bootstrap untuk mencari desain web yang cocok dengan saya, tetapi saya mengalami kesulitan dalam membuat website tanpa menggunakan framework seperti Bootstrap. Saya sadar bahwa Bootstrap sangat membantu dalam membuat tampilan website yang lebih menarik dan fungsional. Namun, ketika harus membuat website tanpa menggunakan framework seperti Bootstrap, saya merasa sedikit kesulitan dan terkadang merasa tidak yakin dengan desain website yang saya buat. Saya sering mencoba untuk mempelajari teknik-teknik desain web yang lebih tradisional dan dasar, seperti HTML, CSS, dan JavaScript, tetapi masih merasa terbatas dalam menciptakan desain website yang memuaskan.
+            </p>
+            <p>
+              Meskipun demikian, saya tidak ingin kehilangan semangat dan antusiasme saya dalam mengeksplorasi desain web. Saya masih akan terus mencoba dan mempelajari teknik-teknik baru dalam membuat tampilan website yang lebih menarik dan fungsional.
+            </p>
+          </section>
+
+          <!-- membuat tag section -->
+          <section>
+            <h3>Bermain Gitar</h3>
+            <img class="article-image" src="img/gitar.jpg" alt="gitar" />
+            <p>
+              Saya merupakan seseorang yang memiliki hobi bermain gitar untuk mengisi waktu luang. Saya bukanlah seorang musisi profesional, namun saya sangat menikmati momen ketika saya bisa memainkan gitar dan menciptakan suara yang indah. Saya tidak memiliki keahlian yang tinggi dalam bermain gitar, tetapi saya terus belajar dan berlatih agar semakin mahir. Saya juga senang mencoba memainkan lagu-lagu baru atau mengeksplorasi teknik bermain gitar yang berbeda. Bagi saya, bermain gitar adalah hobi yang sangat menyenangkan dan bermanfaat. Selain dapat mengisi waktu luang, saya juga merasa lebih rileks dan tenang setelah bermain gitar.
+            </p>
+          </section>
+
+          <!-- membuat tag section -->
+          <section>
+            <h3>Mendengarkan Musik</h3>
+            <img class="article-image" src="img/music.jpg" alt="music" />
+            <p>
+              Saya adalah seseorang yang memiliki hobi mendengarkan musik di saat belajar, bekerja, maupun saat waktu luang. Saya sangat menikmati momen ketika bisa mendengarkan musik favorit saya dan merasakan alunan melodi yang mengalun di telinga. Jenis musik yang paling sering saya dengarkan adalah jazz, rock, ballad, pop, dan beberapa musik country. Saya suka mencoba mendengarkan berbagai jenis musik, namun jenis musik tersebut yang paling sering menemani saya dalam kegiatan sehari-hari. Bagi saya, mendengarkan musik adalah cara yang menyenangkan dan efektif untuk merelaksasi pikiran dan menenangkan diri. Musik juga dapat menjadi inspirasi bagi saya untuk mengeksplorasi ide-ide kreatif dan membuat saya merasa lebih produktif dalam melakukan kegiatan sehari-hari.
+            </p>
+          </section>
+        </article>
+
+        <!-- membuat tag article dengan class card dan id personality -->
+        <article class="card" id="personality">
+          <h2>Personality</h2>
+          <p>
+            Saya adalah seorang yang memiliki karakteristik kepribadian yang kuat dan energik. Saya selalu bersemangat dalam menjalani kehidupan sehari-hari dan memiliki sikap pantang menyerah dalam mencapai tujuan saya. Saya lebih suka berbicara langsung dan jelas dalam menyampaikan pikiran dan pendapat saya, serta cenderung lebih suka bekerja dalam lingkungan yang kompetitif. Saya sangat memperhatikan detail dan fokus pada pencapaian tujuan, dan kadang-kadang terlalu keras pada diri sendiri dan orang lain ketika mencapai tujuan. Meskipun begitu, saya selalu berusaha untuk mengambil waktu untuk diri sendiri dan bersantai.  
+          </p>
+        </article>
+
+        <!-- membuat tag article dengan class card dan id interest -->
+        <article class="card" id="interest">
+          <h2>Interest</h2>
+          <!-- melakukan import gambar cloud dengan class article-image-->
+          <img class="article-image" src="img/cloud.jpg" alt="cloud" />
+          <p>
+            Saya sangat tertarik dengan dunia cloud, khususnya cloud server dan cloud computing. Saya senang mempelajari cara kerja cloud, bagaimana data dapat disimpan secara aman dan mudah diakses, dan bagaimana infrastruktur cloud dapat ditingkatkan untuk menangani kebutuhan pengguna yang semakin meningkat. 
+          </p>
+          <p>
+            Saya juga tertarik dengan perkembangan teknologi penyimpanan cloud yang semakin pesat dan inovatif, seperti teknologi virtualisasi dan software-defined storage. Saya bersemangat untuk terlibat dalam proyek-proyek yang memungkinkan saya memperdalam pemahaman saya tentang teknologi cloud dan menyediakan solusi terbaik untuk kebutuhan bisnis dan industri.
+          </p>
+          <p>
+            Saya percaya bahwa cloud computing akan terus berkembang dan menjadi bagian penting dari masa depan teknologi informasi, dan saya siap untuk berpartisipasi di dalamnya. 
+          </p>
+        </article>
+      </div>
+    </main>
+  </body>
+
+  <!-- membuat tag footer -->
+  <footer>
+    <p>&#169; 2023, Fransiscus Dharma Hadi Prayoga</p>
+  </footer>
+</html>

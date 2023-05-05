@@ -1,0 +1,232 @@
+/*melakukan import font chakra petch dari googlefont*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+/*melakukan pengaturan body sebagai berikut*/
+body {
+  font-family: 'Chakra Petch', sans-serif; /*mengaplikasikan font yang telah diimport*/
+  padding: 0; /*mengatur padding menjadi 0*/
+  margin: 0; /*mengatur margin menjadi 0*/
+}
+
+/*melakukan pengaturan display pada header menjadi inline*/
+header {
+  display: inline;
+}
+
+/*melakukan pengaturan nav sebagai berikut*/
+nav {
+  padding: 5px; /*mengatur padding menjadi 5px*/
+  position: sticky; /*mengatur posisi nav menjadi sticky (agar selalu menempel diatas saat scroll)*/
+  top: 0; /*mengatur batas top menjadi 0*/
+  height: 40px; /*mengatur height menjadi 40px*/
+  display: flex; /*mengatur display nav menjadi tipe flex*/
+  justify-content: space-between; /*mengatur justify setiap content menjadi space-between*/
+  align-items: center; /*mengatur letak items nav agar berada di tengah (center)*/
+  background:  rgba(0, 0, 0, .65) url(../img/bg.jpg); /*mengupload background nav dan melakukan pewarnaan pada background*/
+	background-blend-mode: darken; /*mengatur blend mode background menjadi darken*/
+	background-position: center; /*mengatur posisi background di tengah (center)*/
+	background-repeat: no-repeat; /*mengatur repetisi background menjadi no-repeat atau tidak mengulang gambar*/
+	background-size: cover; /*mengatur ukuran background menjadi tipe cover*/
+  background-position-y: -170px; /*mengatur posisi y-axis atau vertical background menjadi -170px*/
+}
+
+/*melakukan pengaturan gambar atau img pada nav yang dimana merupakan sebuah logo sebagai berikut*/
+nav img{
+  margin-left: 15px; /*mengatur margin untuk bagian kanan logo sebesar 15px*/
+  width:100px; /*mengatur width logo sebesar 100px*/
+  height:30px; /*mengatur height logo sebesar 30px*/
+}
+
+/*melakukan pengaturan ul pada nav sebagai berikut*/
+nav ul {
+  display: flex; /*mengatur display ul pada nav menjadi tipe flex*/
+  gap: 15px; /*mengatur gap antar ul sebesar 15px*/
+  justify-content: center; /*mengatur justify setiap content menjadi center*/
+  align-items: center; /*mengatur letak items ul pada nav agar berada di tengah (center)*/
+  list-style: none; /*mengatur list-style menjadi none atau tidak ada*/
+  padding: 0; /*mengatur padding ul menjadi 0*/
+}
+
+/*melakukan pengaturan li pada nav sebagai berikut*/
+nav li {
+  list-style-type: none; /*mengatur list-style-type menjadi none atau tidak ada*/
+  flex-basis: 25%; /*mengatur flex-basis li pada nav menjadi 25%*/
+  text-align: center; /*mengatur letak text atau text-align li pada nav agar berada di tengah (center)*/
+  padding-right: 20px; /*mengatur padding di bagian kanan li pada nav sebesar 20px*/
+}
+
+/*melakukan pengaturan a pada nav sebagai berikut*/
+nav a {
+  font-size: 15px; /*mengatur ukuran font menjadi 15px*/
+  font-weight: 300; /*mengatur ketebalan font sebesar 300*/
+  text-decoration: none; /*mengatur dekorasi text menjadi tidak ada atau none*/
+  color: white; /*mengatur warna teks a pada nav menjadi warna putih*/
+}
+
+/*melakukan pengaturan a saat hover pada nav sebagai berikut*/
+nav a:hover {
+  font-weight: bold; /*mengatur ketebalan font menjadi bold*/
+  font-size: 15px; /*mengatur ukuran font menjadi sebesar 15px*/
+}
+
+/*melakukan pengaturan class cover sebagai berikut*/
+.cover {
+  font-size: 20px; /*mengatur ukuran font pada container menjadi 20px*/
+  padding: 80px; /*mengatur padding pada container sebesar 80px*/
+  text-align: center; /*mengatur letak text atau text-align container agar berada di tengah (center)*/
+  color: white; /*mengatur warna teks a pada container menjadi warna putih*/
+  box-sizing: border-box; /*mengatur sizing box container menjadi border-box*/
+  background:  rgba(0, 0, 0, .65) url(../img/bg.jpg); /*mengupload background container dan melakukan pewarnaan pada background*/
+	background-blend-mode: darken; /*mengatur blend mode background menjadi darken*/
+	background-position: center; /*mengatur posisi background di tengah (center)*/
+	background-repeat: no-repeat; /*mengatur repetisi background menjadi no-repeat atau tidak mengulang gambar*/
+	background-size: cover; /*mengatur ukuran background menjadi tipe cover*/
+	height: 400px; /*mengatur height dari container sebesar 400px*/
+}
+
+/*melakukan pengaturan main sebagai berikut*/
+main {
+  padding: 20px; /*mengatur padding main sebesar 20px*/
+  display: flex; /*mengatur display main menjadi tipe flex*/
+  gap: 1.5rem; /*mengatur gap sebesar 1.5rem*/
+}
+
+/*melakukan pengaturan id aside-group sebagai berikut*/
+#aside-group {
+  display: flex; /*mengatur display aside-group menjadi tipe flex*/
+  flex: 5; /*mengatur besar flex aside-group sebesar 5*/
+  flex-flow: column nowrap; /*mengatur flow dari flex aside-group menjadi column nowrap*/
+  gap: 1rem 2rem; /*mengatur gap x-axis dan y-axis aside-group masing-masing sebesar 1rem dan 2rem*/
+}
+
+/*melakukan pengaturan text-align atau letak teks keseluruhan table menjadi kiri*/
+table {
+  text-align: left;
+}
+
+/*melakukan pengaturan class card sebagai berikut*/
+.card {
+  box-shadow: 0 5px 11px 2px rgba(0, 0, 0, 0.2); /*mengatur box-shadow atau bayangan dari card*/
+  border-radius: 10px; /*mengatur border radius atau sudut dari bingkai card sebesar 10px*/
+  padding: 25px; /*mengatur padding dari card sebesar 25px*/
+}
+
+/*melakukan pengaturan text-align atau letak teks header milik aside untuk role profile agar berada di tengah atau center*/
+aside[role="profile"] header{
+  text-align: center;
+
+}
+
+/*melakukan pengaturan text-align atau letak teks header milik aside untuk role find-me agar berada di tengah atau center*/
+aside[role="find-me"] header{
+  text-align: center;
+
+}
+
+/*melakukan pengaturan i atau icon dari class-social media sebagai berikut*/
+.social-media i {
+  color: black; /*mengatur warna font atau icon menjadi hitam*/
+  font-size: 50px; /*mengatur ukuran font atau icon sebesar 50px*/
+}
+
+/*melakukan pengaturan i atau icon dari id content media sebagai berikut*/
+#content {
+  flex: 5; /*mengatur flex dari content sebesar 5*/
+  display: flex; /*mengatur display content menjadi tipe flex*/
+  flex-flow: column nowrap; /*mengatur flow dari flex menjadi column nowrap*/
+  gap: 1rem 2rem; /*mengatur gap x-axis dan y-axis content masing-masing sebesar 1rem dan 2rem*/
+}
+
+/*melakukan pengaturan class article-image sebagai berikut*/
+.article-image {
+  width: 100%; /*mengatur width gambar menjadi 100%*/
+  max-height: 300px; /*mengatur max-height atau height maksimum gambar menjadi 300px*/
+  object-fit: cover; /*mengatur fit dari objek menjadi tipe cover*/
+  object-position: center 30%; /*mengatur posisi objek menjadi ditengah sebesar 30%*/
+}
+
+/*melakukan pengaturan warna untuk h2 menjadi hitam*/
+h2 {
+  color: #000000;
+}
+
+/*melakukan pengaturan warna untuk h3 menjadi hitam*/
+h3 {
+  color: #000000;
+}
+
+/*melakukan pengaturan footer sebagai berikut*/
+footer {
+  padding: 5px; /*mengatur padding footer sebesar 5px*/
+  color: white; /*mengatur warna teks atau font pada footer menjadi putih*/
+  text-align: center; /*mengatur letak teks pada footer menjadi di tengah atau center*/
+  background:  rgba(0, 0, 0, .65) url(../img/bg.jpg); /*mengupload background footer dan melakukan pewarnaan pada background*/
+	background-blend-mode: darken; /*mengatur blend mode background menjadi darken*/
+	background-position: center; /*mengatur posisi background di tengah (center)*/
+	background-repeat: no-repeat; /*mengatur repetisi background menjadi no-repeat atau tidak mengulang gambar*/
+	background-size: cover; /*mengatur ukuran background menjadi tipe cover*/
+
+  background-position-y: -750px; /*mengatur posisi y-axis background sebesar -750px*/
+}
+
+/*mengatur media screen dengan maksimal width sebesar 1200px*/
+@media screen and (max-width: 1200px) {
+  
+  /*mengatur flow pada flex di main saat kondisi media screen menjadi column nowrap dalam kondisi media screen 1200px*/
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  /*mengatur align-self id aside-group pada main menjadi di tengah atau centerdalam kondisi media screen 1200px*/
+  main #aside-group {
+    align-self: center;
+  }
+}
+
+/*mengatur media screen dengan maksimal width sebesar 768px*/
+@media screen and (max-width: 768px) {
+
+  /*mengatur nav dalam kondisi media screen 768px sebagai berikut*/
+  nav {
+    background:  rgba(0, 0, 0, .65) url(../img/bg-s.jpg); /*mengupload background nav dan melakukan pewarnaan pada background*/
+	  background-blend-mode: darken; /*mengatur blend mode background menjadi darken*/
+	  background-position: center; /*mengatur posisi background di tengah (center)*/
+	  background-repeat: no-repeat; /*mengatur repetisi background menjadi no-repeat atau tidak mengulang gambar*/
+	  background-size: cover; /*mengatur ukuran background menjadi tipe cover*/
+
+    background-position-x: -60px; /*mengatur posisi x-axis background sebesar -60px*/
+  }
+
+  /*mengatur ul pada nav dalam kondisi media screen 768px sebagau berikut*/
+  nav ul {
+    display: flex; /*mengatur display ul pada nav menjadi tipe flex*/
+    flex-direction: row; /*mengatur direction atau arah flex menjadi row*/
+    justify-content: center; /*mengatur justify content menjadi di tengah atau center*/
+    align-items: center; /*mengatur letak items ul pada nav agar berada di tengah (center)*/
+  }
+
+  /*mengatur width ul dan li pada nav dalam kondisi media screen 768px sebesar 20%*/
+  nav ul li {
+    width: 20%;
+  }
+  
+  /*melakukan pengaturan align-self profile yang merupakan role dari aside menjadi stretch kondisi media screen 768px*/
+  aside[role="profile"]{
+    align-self: stretch;
+  }
+
+  /*melakukan pengaturan align-self find-me yang merupakan role dari aside menjadi stretch kondisi media screen 768px*/
+  aside[role="find-me"]{
+    align-self: stretch;
+  }
+
+  /*mengatur footer dalam kondisi media screen 768px sebagau berikut*/
+  footer {
+    background:  rgba(0, 0, 0, .65) url(../img/bg.jpg); /*mengupload background footer dan melakukan pewarnaan pada background*/
+    background-blend-mode: darken; /*mengatur blend mode background menjadi darken*/
+    background-position: center; /*mengatur posisi background di tengah (center)*/
+    background-repeat: no-repeat; /*mengatur repetisi background menjadi no-repeat atau tidak mengulang gambar*/
+    background-size: cover; /*mengatur ukuran background menjadi tipe cover*/
+    background-position-y: -240px; /*mengatur posisi y-axis background sebesar -240px*/
+  }
+}
